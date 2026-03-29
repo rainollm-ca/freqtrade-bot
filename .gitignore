@@ -1,3 +1,11 @@
-user_data/logs/
-user_data/data/
+# Ignore logs and data, but keep directory structure
+user_data/logs/*
+!user_data/logs/.gitkeep
+
+user_data/data/*
+!user_data/data/.gitkeep
+
+# Ignore database
 *.sqlite
+*.sqlite-shm
+*.sqlite-wal
